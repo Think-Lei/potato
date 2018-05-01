@@ -1,12 +1,40 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/tianjia/tianjia",
+    "pages/daochu/daochu"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "土豆日程",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#066ff99",
+    "backgroundColor": "white",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "日程",
+        "iconPath": "images/richeng.png",
+        "selectedIconPath": "images/richeng1.png"
+      },
+      {
+        "pagePath": "pages/tianjia/tianjia",
+        "text": "添加",
+        "iconPath": "images/tianjia.png",
+        "selectedIconPath": "images/tianjia1.png"
+      },
+      {
+        "pagePath": "pages/daochu/daochu",
+        "text": "导出",
+        "iconPath": "images/daochu.png",
+        "selectedIconPath": "images/daochu1.png"
+      } 
+    ]
   }
 }
