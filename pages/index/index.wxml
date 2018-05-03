@@ -1,32 +1,13 @@
 <!--index.wxml-->
-<image class="head"src="image/pku.jpg"></image>
-
-<view id="panel" class="flex-column">
-  <view class="flex-cell flex-row">
-    <text class="flex-cell flex-row">时间</text>
-    <text class="flex-cell flex-row">周一</text>
-    <text class="flex-cell flex-row">周二</text>
-    <text class="flex-cell flex-row">周三</text>
-    <text class="flex-cell flex-row">周四</text>
-    <text class="flex-cell flex-row">周五</text>
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
   </view>
-  <block wx:for="{{listData}}" wx:key="{{code}}">
-   <view class="flex-row flex-cell" wx:if="{{index % 2 == 0}}">
-    <text class="flex-cell flex-row">{{item.code}}</text>
-    <text class="flex-cell flex-row">{{item.text}}</text>
-    <text class="flex-cell flex-row">{{item.text}}</text>
-    <text class="flex-cell flex-row">{{item.text}}</text>
-    <text class="flex-cell flex-row">{{item.text}}</text>
-    <text class="flex-cell flex-row">{{item.text}}</text>
-   </view>
-   <view class="flex-row flex-cell" wx:else>
-    <text class="flex-cell flex-row">{{item.code}}</text>
-    <text class="flex-cell flex-row">{{item.text}}</text>
-    <text class="flex-cell flex-row">{{item.text}}</text>
-    <text class="flex-cell flex-row">{{item.text}}</text>
-    <text class="flex-cell flex-row">{{item.text}}</text>
-    <text class="flex-cell flex-row">{{item.text}}</text>
-    </view>
-   </block>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
   </view>
-
+</view>
