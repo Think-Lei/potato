@@ -1,8 +1,10 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/tianjia/tianjia",
-    "pages/daochu/daochu"
+    "pages/index/index",
+    
+    "pages/guanzhu/guanzhu",
+    "pages/list/list"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -14,23 +16,26 @@
    
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "日程",
-        "iconPath": "images/richeng.png",
-        "selectedIconPath": "images/richeng1.png"
-      },
-      {
         "pagePath": "pages/tianjia/tianjia",
         "text": "添加",
-        "iconPath": "images/tianjia.png",
-        "selectedIconPath": "images/tianjia1.png"
+        "iconPath": "images/tianjia1.png",
+        "selectedIconPath": "images/tianjia2.png"
       },
       {
-        "pagePath": "pages/daochu/daochu",
-        "text": "导出",
-        "iconPath": "images/daochu.png",
-        "selectedIconPath": "images/daochu1.png"
-      } 
+        "pagePath": "pages/index/index",
+        "text": "日程",
+        "enablePullDownRefresh": true,
+        "iconPath": "images/richeng.png",
+        "selectedIconPath": "images/richeng5.png"
+      },
+      
+      {
+        "pagePath": "pages/guanzhu/guanzhu",
+        "text": "关注",
+        "iconPath": "images/guanzhu.png",
+        "selectedIconPath": "images/guanzhu7.png"
+      }
     ]
-  }
+  },
+  "enablePullDownRefresh": true
 }

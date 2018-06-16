@@ -1,6 +1,0 @@
-<!--pages/add/add.wxml-->
-<image class="head"src="../../image/pku.jpg"></image>
-<form bindsubmit="formSubmit" bindreset="formReset">
-<input value="3">日期</input>
-<picker mode="selector" value="1">事件</picker>
-</form>
